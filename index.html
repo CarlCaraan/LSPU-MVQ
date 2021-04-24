@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: kumbh, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    height: 100px;
+    background: #3D0001;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.navbar__logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo2 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__header {
+    display: flex;
+    align-items: center;
+}
+.navbar__header h1{
+  font-family: georgia;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+.navbar__header h1{
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  font-family: georgia;
+}
+}
+
+@media screen and (max-width: 580px) {
+.navbar__header h1{
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  font-family: georgia;
+}
+}
+.services{
+	background: #d3d3d3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 10rem 0;
+}
+.services__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	padding: 0;
+	margin: 0;
+}
+.services__card{
+	margin: 30px;
+	height: 425px;
+	width: 600px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: black;
+	background-color: white;
+}
+.services__card h2{
+	text-align: center;
+}
+.services__card p{
+	text-align: center;
+	margin-top: 24px;
+	margin-left: 80px;
+	margin-right: 80px;
+	font-size: 20px;
+}
+.services__card:hover{
+	transform: scale(1.010);
+	transition: 0.3s ease-in;
+}
+/*mobile responsive*/
+@media screen and (max-width: 1300px){
+  .services__wrapper{
+    grid-template-columns: 1fr;
+  }
+}
+/*mobile responsive smaller*/
+@media screen and (max-width: 560px){
+  .services__wrapper{
+    grid-template-columns: 1fr;
+  }
+  .services__card{
+  	width: 400px;
+  }
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.title{
+	text-align: center;
+	text-align: center;
+	justify-content: center;
+	margin-top: 50px;
+	padding-top: 3rem;
+	margin-bottom: 1.2rem;
+}
+.quality__container{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+}
+.p__container{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+ .p__container p {
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 100px;
+	font-size: 20px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+/*mobile responsive quality policy*/
+@media screen and (max-width: 560){
+.p__container p {
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 100px;
+	font-size: 20px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+}
+
+</style>
+<body>
+	<nav class="navbar">
+		<div class="navbar__container">
+			<div class="navbar__logo1">
+				<img src ="lspu.png" style="width: 80px; height: 80px;">
+			</div>
+			<div class="navbar__header">
+				<h1>Laguna State Polytechnic University</h1>
+			</div>
+			<div class="navbar__logo2">
+				<img src ="ccs.png" style="width: 80px; height: 80px;">
+			</div>
+		</div>
+	</nav>
+
+<!--About Section-->
+<div class="services" id="services">
+	<div class="services__wrapper">
+		<div class="services__card">
+			<h2>Vision</h2>
+			<p>The Laguna State Polytechnic University is a center of sustainable development initiatives transforming lives and communities</p>
+		</div>
+		<div class="services__card">
+			<h2>Mission</h2>
+			<p>LSPU provides quality education through responsive instruction, distinctive research, sustainable extension and production services for improved quality of life</p>
+		</div>
+	</div>
+</div>
+
+<!--Quality Policy Section-->
+  <div class="banner"></div> <!--banner-->
+  <div class="title" style="margin-left: 40px"><h2>Quality Policy</h2></div>
+  <div class="quality__container">
+<div class="p__container">
+		<p>LSPU delivers quality education through responsive instraction, distinctive research, sustainable extension and production service. Thus, we are committed with continual improvement to meet applicable requirements to provide quality, efficient and effective services to the university stakeholder's highest level of satistfacton through an excellent management system imbued with utmost integrity, professionalism and innovation.</p>
+</div>
+</div>
+
+</body>
+</html>
